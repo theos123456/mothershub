@@ -23,7 +23,17 @@
         </div>
       </div>
     </div>
-	<?php include 'connection.php';
+	
+    <section class="ftco-section bg-light">
+    	<div class="container">
+		
+    		<div class="row">
+			
+    			<div class="col-md-8 col-lg-10 order-md-last">
+				
+				
+    				<div class="row">
+					<?php include 'connection.php';
    if(isset($_GET['category']))
    {
 	$sel2 = mysqli_query($con, "SELECT * FROM category WHERE cathe_name='".$_GET['category']."'");
@@ -38,11 +48,6 @@
 		{
 
   ?>
-    <section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-8 col-lg-10 order-md-last">
-    				<div class="row">
 		    			<div class="col-sm-6 col-md-6 col-lg-4 ftco-animate">
 		    				<div class="product">
 		    					<a href="#" class="img-prod"><img class="img-fluid" src="<?php echo $fetch1['product_picture']; ?>" alt="Colorlib Template">
